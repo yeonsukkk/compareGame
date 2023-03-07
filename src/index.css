@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+html, body {
+    font-family: 'Single Day', cursive;
+}
+
+figure img {
+    width: 65%;
+}
+
+button {
+    border: 0 none;
+    border-radius: 0;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 15px;
+    font: bold 20px Arial,sans-serif;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    width: 35%;
+    height: 48px;
+    overflow: hidden;
+}
+
+button span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 48px;
+    z-index: 10;
+}
+
+button:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0; left: 0;
+    z-index: 1;
+    transition: all .25s;
+}
+
+button:first-child {
+    background-color: #298348; 
+}
+
+button:first-child:after {
+    background-color: #a52325;
+}
+
+button:last-child {
+    background-color: #6e6e6e;
+}
+
+button:last-child:after {
+    background-color: #464646;
+}
+
+button:hover:after {
+    height: 100%;
+}
+
+#wrap {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+#cnt {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#cnt > h1 {
+    text-align: center;
+    font-size: 6vw;
+    margin-bottom: 35px;
+}
+
+#btn {
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px 0 0;
+}
+#container .box {
+    width: 80%;
+    text-align: center;
+}
+
+#container .box h1 {
+    font-size: 3.5vw;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#container .box figcaption {
+    margin-top: 30px;
+}
+
+#container .box figcaption dt {
+    font-size: 3vw;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px 0;
+    background-color: rgba(0,0,0,0.1);
+}
+
+#container .box figcaption dd {
+    font-size: 2.7vw;
+    margin: 2px 0 20px;
+}
+
+/* modal */
+.modalWrap {
+    position: fixed;
+    width :100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 100;
+    display: none;
+}
+
+.modalCnt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    overflow: auto;
+    padding: 5%;
+    box-sizing: border-box;
+    background: url('./assets/bg_modal.png') right 7% bottom no-repeat#fff;
+    background-size: 30%;
+}
+
+.modalCnt h2 {
+    text-align: center;
+    font-size: 6vw;
+    margin-bottom: 9vh;
+}
+
+.modalCnt .box {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.modalCnt .box > div {
+    width: 40%;
+    text-align: center;
+}
+
+.modalCnt .box .verse {
+    width: auto;
+    display: flex;
+    align-items: center;
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.modalCnt .box h3 {
+    font-size: 6vw;
+    margin-bottom: 1vh;
+}
+
+.modalCnt .box p {
+    font-size: 12vw;
+}
+
+.modalCnt .resultTxt {
+    font-size: 8vw;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.modalCnt .btnClosed {
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.modalCnt .btnClosed:hover:after {
+    height: 0;
+}
+
+@media (max-width: 800px){
+    #cnt {
+        width: 90%;
+    }
+    button {
+        width: 35%;
+        height: 48px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #cnt {
+        width: 800px;
+    }
+    #cnt h1 {
+        font-size: 50px;
+    }
+    #container .box h1 {
+        font-size: 20px;
+    }
+    figure img {
+        width: 150px;
+    }
+    button {
+        width: 130px;
+        height: 55px;
+    }
+    button span {
+        line-height: 55px;
+    }
+    #container .box figcaption dt {
+        font-size: 30px
+    }
+    #container .box figcaption dd{
+        font-size: 28px;
+    }
+    .modalCnt {
+        width: 800px;
+    }
+    .modalCnt h2 {
+        font-size: 60px;
+        margin-bottom: 50px;
+    }
+    .modalCnt .box h3 {
+        font-size: 55px;
+    }
+    .modalCnt .box p {
+        font-size: 140px;
+    }
+    .modalCnt .box .verse {
+        font-size: 60px;
+    }
+    .modalCnt .resultTxt{
+        font-size: 70px;
+        margin-top: 70px;
+    }
+    .modalCnt .btnClosed {
+        width:200px;
+    }
+}
