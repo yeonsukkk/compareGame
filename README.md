@@ -16,6 +16,8 @@
 3. 뽑은 5개의 숫자의 합을 구함
 4. 5번의 숫자를 다 뽑으면 총 합이 구해지고 A팀, B팀의 승패가 결정됨
 
-<img src="https://ys-game1.s3.ap-northeast-2.amazonaws.com/img1.PNG" alt="이미지1" style="width: 200px;" />
+<div>
+    <img src="https://ys-game1.s3.ap-northeast-2.amazonaws.com/img1.PNG" alt="이미지1" style="width: 200px;" />
     <img src="https://ys-game1.s3.ap-northeast-2.amazonaws.com/img2.PNG" alt="이미지2" style="width: 200px;" />
+</div>
 <a href="https://ysoo-game-num.s3.ap-northeast-2.amazonaws.com/index.html" target="_blank">사이트 가기</a>
